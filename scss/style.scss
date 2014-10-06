@@ -1,7 +1,8 @@
 // Vendor
 // A collection of externally created sass files
 @import 'vendor/reset';
-@import 'vendor/bourbon/bourbon';
+@import 'vendor/sass-mq';
+@import 'vendor/css3';
 
 // Helpers
 // Sass files that include mixins, functions, placeholders and variables.
