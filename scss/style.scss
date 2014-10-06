@@ -1,1 +1,8 @@
-// @import "base";
+@import 'base/reset';
+
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';

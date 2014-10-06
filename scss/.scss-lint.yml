@@ -26,3 +26,14 @@ linters:
 
   TrailingSemicolonAfterPropertyValue:
     enabled: false
+
+  SingleLinePerSelector:
+    exclude:
+      - 'base/_reset.scss'
+
+  StringQuotes:
+    style: single_quotes
+
+  DuplicateProperty:
+    exclude:
+      - 'base/_reset.scss'
