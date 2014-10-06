@@ -1,3 +1,16 @@
+* {
+    @include box-sizing(border-box);
+}
+
 html {
-    background-color: #eee;
+    font-family: $f-sans-serif;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
