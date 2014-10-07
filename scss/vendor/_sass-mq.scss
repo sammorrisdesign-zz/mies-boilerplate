@@ -156,7 +156,7 @@ $mq-show-breakpoints: () !default;
         @each $show-breakpoint in $mq-show-breakpoints {
             $width: mq-get-breakpoint-width($show-breakpoint);
             @include mq($show-breakpoint) {
-                content: "#{$show-breakpoint} ³ #{$width} (#{mq-px2em($width)})";
+                content: "#{$show-breakpoint} > #{$width} (#{mq-px2em($width)})";
             }
         }
     }
