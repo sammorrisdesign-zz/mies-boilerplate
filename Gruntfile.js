@@ -57,4 +57,5 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['sass', 'scsslint', 'browserSync', 'watch']);
+  grunt.registerTask('sans-lint', ['sass', 'browserSync', 'watch:css']);
 };
