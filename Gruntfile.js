@@ -13,24 +13,24 @@ module.exports = function(grunt) {
     // Task configuration.
     watch: {
       scsslint: {
-        files: 'scss/**/*.scss',
+        files: '_scss/**/*.scss',
         tasks: ['scsslint']
       },
       css: {
-        files: 'scss/**/*.scss',
+        files: '_scss/**/*.scss',
         tasks: ['sass']
       }
     },
     sass: {
       dist: {
         files: {
-            'style.css' : 'scss/style.scss'
+            'assets/css/style.css' : '_scss/style.scss'
         }
       }
     },
     scsslint: {
       allFiles: [
-        'scss/**/*.scss'
+        '_scss/**/*.scss'
       ],
       options: {
         config: 'scss/.scss-lint.yml'
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
     },
     browserSync: {
       bsFiles: {
-        src : 'style.css'
+        src : 'assets/css/style.css'
       },
       options: {
         watchTask: true,
