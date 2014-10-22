@@ -55,7 +55,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-scss-lint');
   grunt.loadNpmTasks('grunt-browser-sync');
 
-  // Default task.
+  // Tasks
   grunt.registerTask('default', ['sass', 'scsslint', 'browserSync', 'watch']);
   grunt.registerTask('sans-lint', ['sass', 'browserSync', 'watch:css']);
 };
