@@ -1,5 +1,6 @@
 /*global module:false*/
 module.exports = function(grunt) {
+  require('jit-grunt')(grunt);
 
   // Project configuration.
   grunt.initConfig({
@@ -28,14 +29,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    scsslint: {
-      allFiles: [
-        '_scss/**/*.scss'
-      ],
-      options: {
-        config: 'scss/.scss-lint.yml'
-      }
-    },
     browserSync: {
       bsFiles: {
         src : 'assets/css/style.css'
@@ -49,13 +42,7 @@ module.exports = function(grunt) {
     }
   });
 
-  // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-scss-lint');
-  grunt.loadNpmTasks('grunt-browser-sync');
-
   // Tasks
-  grunt.registerTask('default', ['sass', 'scsslint', 'browserSync', 'watch']);
+  grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
   grunt.registerTask('sans-lint', ['sass', 'browserSync', 'watch:css']);
 };
