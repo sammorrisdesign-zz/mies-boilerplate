@@ -5,7 +5,7 @@ Mies Boilerplate is a project boilerplate for the web. It was designed so I coul
 
 ## Usage
 
-Initial install to get dependencies; `bundle install` and `npm install`. Then use `Grunt` to watch and lint the sass.
+Initial install to get dependencies; `npm install`. Then use `Grunt` to watch and lint the sass.
 
 ## Background
 
